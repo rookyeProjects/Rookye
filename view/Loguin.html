@@ -1,0 +1,143 @@
+<html>
+
+<head>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/materialize.min.css">
+   <link rel="stylesheet" type="text/css" href="../css/stylepage.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/materialize.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+
+    <script>
+      function loguin()
+        {
+          var user = $("#user").val();
+          var pass = $("#pass").val();
+          var valite=true
+
+          if( user=="")
+          {
+             $("#user").addClass("invalid");
+            valite=false;
+          }
+          else
+          {
+
+             $("#user").removeClass("invalid");
+            valite=true;
+
+          }
+          if( pass=="")
+          {
+            $("#pass").addClass("invalid");
+            valite=false;
+          }
+          else
+          {
+            $("#pass").removeClass("invalid");
+            valite=true;
+
+          }
+
+
+        }
+
+    </script>
+  <style>
+    body {
+      display: flex;
+      min-height: 100vh;
+      flex-direction: column;
+    }
+
+    main {
+      flex: 1 0 auto;
+    }
+
+    body {
+      background: #000;
+    }
+
+     
+    }
+  </style>
+</head>
+
+<body>
+ <div class="container">
+  <div class="row">
+    <div class="col-md-2">
+        <h1 class="logotxt">Rookie</h1>
+      </div>
+       
+</div> 
+  <div class="row">
+    <div class="col-md-2 offset-md-5">
+         <h5 class="grey-text">Intranet</h5>
+         
+      </div>
+       
+</div> 
+ 
+      <div class="row">
+        <div class="col-sm-10 offset-sm-1 col-md-10 offset-md-1 ">
+          <div class="card">
+            <div class="card-content">
+              <div class="row">
+                <div class="input-field col-sm-10 offset-sm-1">
+                   <i class="material-icons prefix">account_circle</i>
+                   <input id="user" type="text" class="validate">
+                    <label for="user">Usuario</label>
+                </div>
+              </div>  
+              <div class="row">
+                <div class="input-field col-sm-10 offset-sm-1">
+                   <i class="material-icons prefix">text_format</i>
+                   <input id="pass" type="password" class="validate">
+                    <label for="pass">Contraseña</label>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-xl-2  col-sm-4 col-md-5 offset-md-1">
+                  <label class="activator">Olvido su contraseña</label>   
+                </div>
+                <div class="col-xl-2 col-md-2 offset-md-3 offset-md-4 ">    
+                <a class="btn-floating btn-large waves-effect waves-light grey" onclick="loguin()"><i class="material-icons">send</i></a>
+              </div>
+              </div>  
+            </div>
+            <div class="card-reveal">
+              <span class="card-title"><i class="material-icons right">close</i></span>
+               <div class="row">
+                <div class="input-field col-sm-10 offset-sm-1">
+                   <i class="material-icons prefix">account_circle</i>
+                   <input id="icon_prefix" type="text" class="validate">
+                    <label for="icon_prefix">Usuario</label>
+                </div>
+
+              </div>  
+             
+              <div class="row">
+                <div class="input-field col-sm-10 offset-sm-1">
+                   <i class="material-icons prefix">email</i>
+                   <input id="icon_prefix" type="email" class="validate">
+                    <label for="icon_prefix">Correo</label>
+                </div>
+              </div>
+                <div class="row">
+                 
+                <div class="col-sm-2 offset-sm-10">
+                <a class="btn-floating btn-large waves-effect waves-light grey"><i class="material-icons">send</i></a>
+              </div>
+              </div> 
+              </div>
+
+               
+            </div>
+          </div>
+        </div>
+      </div> 
+  </body>
+</html>

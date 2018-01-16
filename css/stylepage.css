@@ -1,0 +1,10 @@
+@font-face
+{
+   font-family: "Rhinos"; 
+   src:  url("../fonts/Rhinos.ttf") format("truetype") ;
+}
+.logotxt
+{
+   font-family: "Rhinos";
+   color: red;
+}
