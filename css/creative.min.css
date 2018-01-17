@@ -90,7 +90,7 @@ body{
     color:#0c0818
 }
 #mainNav .navbar-nav>li.nav-item>a.nav-link.active,#mainNav .navbar-nav>li.nav-item>a.nav-link:focus.active{
-    color:#0c0818!important;
+    color:#9d83e8 !important;
     background-color:transparent
 }
 #mainNav .navbar-nav>li.nav-item>a.nav-link.active:hover,#mainNav .navbar-nav>li.nav-item>a.nav-link:focus.active:hover{
