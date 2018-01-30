@@ -8,3 +8,13 @@
    font-family: "Rhinos";
    color: red;
 }
+
+body {
+   
+    background-color: #212529 !important;
+    }
+a.nounderline:link { text-decoration:none !important; }
+a:link {color:red;}
+a:visited {color:red;}
+a:active {color:red;}
+a:hover {color:red;}

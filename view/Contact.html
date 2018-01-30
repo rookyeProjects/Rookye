@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Rookye</title>
+
+     <link href="../css/bootstrap.min.css" rel="stylesheet"> 
+     <link href="../css/stylepage.css" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- Custom styles for this template -->
+
+    <link href="../css/creative.min.css" rel="stylesheet">
+ <!-- Bootstrap core JavaScript -->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>  
+    <script src="../js/main.js"></script>  
+ <style type="text/css">
+   p{
+        color: white;
+
+   }
+
+
+   #contact{
+    padding:10px 0 10px;
+  }
+
+  .contact-text{
+    margin:45px auto;
+  }
+
+  .mail-message-area{
+    width:100%;
+    padding:0 15px;
+  }
+
+  .mail-message{
+    width: 100%;
+    background:rgba(255,255,255, 0.8) !important;
+    -webkit-transition: all 0.7s;
+    -moz-transition: all 0.7s;
+    transition: all 0.7s;
+    margin:0 auto;
+    border-radius: 0;
+  }
+
+  .not-visible-message{
+    height:0px;
+    opacity: 0;
+  }
+
+  .visible-message{
+    height:auto;
+    opacity: 1;
+    margin:25px auto 0;
+  }
+
+/* Input Styles */
+
+  .form{
+    width: 100%;
+    padding: 15px;
+    background:#f8f8f8;
+    border:1px solid rgba(0, 0, 0, 0.075);
+    margin-bottom:25px;
+    color:#727272 !important;
+    font-size:13px;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+
+  .form:hover{
+    border:1px solid #8BC3A3;
+  }
+
+  .form:focus{
+    color: white;
+    outline: none;
+    border:1px solid #8BC3A3;
+  }
+
+  .textarea{
+    height: 200px;
+    max-height: 200px;
+    max-width: 100%;
+  }
+  
+/* Generic Button Styles */
+
+  .button{
+    padding:8px 12px;
+    background:#0A5175;
+    display: block;
+    width:120px;
+    margin:10px 0 0px 0;
+    border-radius:3px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    text-align:center;
+    font-size:0.8em;
+    box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+    -moz-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+    -webkit-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+  }
+
+  .button:hover{
+    background:#8BC3A3;
+    color:white;
+  }
+
+/* Send Button Styles */
+
+  .form-btn{
+    width:180px;
+    display: block;
+    height: auto;
+    padding:15px; 
+    border:none;
+    border-radius:3px;
+    outline: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    margin:auto;
+    box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+    -moz-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+    -webkit-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+  }
+
+  .form-btn:hover{
+    background:#111;
+    color: white;
+    border:none;
+  }
+
+  .form-btn:active{
+    opacity: 0.9;
+  }
+center{
+  margin-top:330px;
+}
+input {
+    position: relative;
+    z-index: 9999;
+}
+ </style>
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Rookye</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#parte1">Parte 1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#parte2">Parte 2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#parte3">Parte 3</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#parte4">Parte 4</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+     <section id="parte1">
+       
+<div class="inner contact">
+                 <div class="contact-form">
+                     <form id="contact-us" method="post" action="#">
+                         <div class="col-xs-6 wow animated slideInLeft" data-wow-delay=".5s">
+                             <input type="text" name="name" id="name" required="required" class="form" placeholder="Nombre" />
+                             <input type="email" name="mail" id="mail" required="required" class="form" placeholder="Correo" />
+                             <input type="text" name="subject" id="subject" required="required" class="form" placeholder="Asunto" />
+                        </div> 
+                         <div class="col-xs-6 wow animated slideInRight" data-wow-delay=".5s">
+                             <textarea name="message" id="message" class="form textarea" required="required"  placeholder="Mensaje"></textarea>
+                        </div> 
+                         <div class="relative fullwidth col-xs-12">
+                             <button  id="submit" name="submit" class="form-btn semibold">Enviar mesaje</button> 
+                        </div> 
+                         <div class="clear"></div>
+                    </form>
+
+                     <div class="mail-message-area">
+                         <div class="alert gray-bg mail-message not-visible-message">
+                            <strong>Gracias</strong> Su mensaje a sido enviado
+                        </div>
+                    </div>
+
+                </div> 
+            </div> 
+
+
+         
+     </section>
+
+       <section id="parte2">
+       
+        
+     </section>
+<section id="parte3">
+       
+     </section>
+
+     <section id="parte4">
+       
+        
+     </section>
+      
+
+    
+
+      
+
+     
+   
+
+  </body>
+
+</html>
