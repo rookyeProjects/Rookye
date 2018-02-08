@@ -1,7 +1,7 @@
 @font-face
 {
    font-family: "Rhinos"; 
-   src:  url("../fonts/Rhinos.ttf") format("truetype") ;
+   src:  url("../public/fonts/Rhinos.ttf") format("truetype") ;
 }
 .logotxt
 {
