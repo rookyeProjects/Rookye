@@ -118,3 +118,4 @@ $RECYCLE.BIN/
 
 # End of https://www.gitignore.io/api/node,windows,sublimetext
 public/
+mix-manifest.json
