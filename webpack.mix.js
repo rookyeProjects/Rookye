@@ -9,8 +9,17 @@ mix.babel([
 	.styles([
 		'src/assets/css/bootstrap.min.css',
 		'src/assets/css/creative.min.css',
+		'src/assets/css/materialize.min.css',
 		'src/assets/css/stylepage.css'
+
 	], 'public/app.css')
+	.styles([
+		'src/assets/css/bootstrap.min.css',
+		'src/assets/css/materialize.min.css',
+		'src/assets/css/stylepage.css',
+		'src/assets/css/cv.css'
+		
+	], 'public/cv.css')
 	.copy(
 		'src/assets/img'
 	, 'public/img')

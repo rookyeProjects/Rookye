@@ -1,7 +1,7 @@
 @font-face
 {
    font-family: "Rhinos"; 
-   src:  url("../fonts/Rhinos.ttf") format("truetype") ;
+   src:  url("../public/fonts/Rhinos.ttf") format("truetype") ;
 }
 .logotxt
 {
@@ -176,7 +176,8 @@ header hgroup h2 {
 		background-position: 0 -180px;
 	}
 
-	.Contact a.nounderline:link { text-decoration:none !important; }
+	
+.Contact a.nounderline:link { text-decoration:none !important; }
 .Contact a:link {color:#147393;}
 .Contact a:visited {color:#147393;}
 .Contact a:active {color:#147393;}
