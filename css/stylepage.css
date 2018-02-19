@@ -175,3 +175,9 @@ header hgroup h2 {
 	.skype {
 		background-position: 0 -180px;
 	}
+
+	.Contact a.nounderline:link { text-decoration:none !important; }
+.Contact a:link {color:#147393;}
+.Contact a:visited {color:#147393;}
+.Contact a:active {color:#147393;}
+.Contact a:hover {color:#147393;}
