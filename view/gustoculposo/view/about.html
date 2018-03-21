@@ -20,9 +20,19 @@
     <!-- Custom styles for this template -->
     <link href="../css/gustoculposo.css" rel="stylesheet">
 
+    
+
   </head>
 
   <body>
+   <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.12';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
      
 
@@ -56,7 +66,7 @@
 
     <section class="page-section about-heading">
       <div class="container">
-        <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="img/about.jpg" alt="">
+       
         <div class="about-heading-content">
           <div class="row">
             <div class="col-xl-9 col-lg-10 mx-auto">
@@ -76,8 +86,7 @@
  <section class="container">
       <div class="bg-faded rounded p-5">
 
-<p> comentarios Facebook</p>
-</div>
+<div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-numposts="5"></div>
  </section>
  <br>
     <footer id="footer" class="text-faded text-center py-5">
