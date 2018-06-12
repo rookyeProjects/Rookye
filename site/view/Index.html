@@ -20,9 +20,11 @@
     <!-- Custom styles for this template -->
 
     <link href="../css/creative.min.css" rel="stylesheet">
+    <link href="../css/main.css" rel="stylesheet">
  <!-- Bootstrap core JavaScript -->
     <script src="../js/jquery.min.js"></script>
     <script src="../js/bootstrap.bundle.min.js"></script> 
+    <script src="../js/handler.js"></script> 
  <!-- script google -->
     <script type="application/ld+json">
       {
@@ -406,7 +408,7 @@ text-decoration:none !important;
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
             <h2 class="section-heading">Contactanos!</h2>
-            <a class="btn btn-light btn-xl" href="Contacto_Rookye.html">Enviar mensaje a Rookye</a>
+            <a class="btn btn-xl" data-toggle="modal" data-target="#myModal">Enviar mensaje a Rookye</a>
             <hr class="my-4">
             <p class="mb-5">Ponte en contacto con nosotros para conocer tus necesidades  y darte una solucion  basados en tu presupuesto </p>
           </div>
@@ -493,7 +495,45 @@ text-decoration:none !important;
             </div>
           </div>
         </footer>
-   
+    <div id="myModal" class="modal fade" role="dialog">
+      <form  name="form_contacto" class="navbar-form navbar-left" role="search" method="POST" action="../../app/EnviaMail.php">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Formulario de contacto</h4>
+            </div>
+            <div class="modal-body">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Nombre(s)" name="nombre" aria-describedby="basic-addon2">
+              </div>
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Apellidos" name="apellidos" aria-describedby="basic-addon2">
+              </div>
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Email" name="email" aria-describedby="basic-addon2">
+              </div>
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Teléfono" name="telefono" aria-describedby="basic-addon2">
+              </div>
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Asunto"  name="asunto" aria-describedby="basic-addon2">
+              </div>
+              <div class="input-group">
+                <div class="alert alert-danger" id="valido" role="alert">...</div>
+              </div>
+              <div class="input-group">
+                 <textarea class="form-control" rows="5" name="mensaje" id="comment"></textarea>
+              </div>
+              <button type="button" class="btn btn-default" onclick="enviarCorreo();">Enviar</button>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
   </body>
 
