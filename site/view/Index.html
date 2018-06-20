@@ -496,7 +496,7 @@ text-decoration:none !important;
           </div>
         </footer>
     <div id="myModal" class="modal fade" role="dialog">
-      <form  name="form_contacto" class="navbar-form navbar-left" role="search" method="POST" action="../../app/EnviaMail.php">
+      <form  name="form_contacto" class="navbar-form navbar-left" role="search" method="POST" action="../../app/Iniciador.php?controlador=Contacto_Guarda">
         <div class="modal-dialog">
           <!-- Modal content-->
           <div class="modal-content">
@@ -525,7 +525,7 @@ text-decoration:none !important;
               <div class="input-group">
                  <textarea class="form-control" rows="5" name="mensaje" id="comment"></textarea>
               </div>
-              <button type="button" class="btn btn-default" onclick="enviarCorreo();">Enviar</button>
+              <button type="button" class="btn btn-default" name="controlador"  value ="Contacto" onclick="enviarCorreo();">Enviar</button>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
